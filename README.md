@@ -30,6 +30,8 @@ Build with:
 ./gbdk/bin/lcc -o helloworld.gb helloworld.c
 ```
 
+![image](https://user-images.githubusercontent.com/5123349/212653165-1b52b60f-1c81-4e80-b01f-0dbfcf48a19b.png)
+
 Unfortunately the compiler seem to break the entry point. This is working with other roms.
 
 ```bash
