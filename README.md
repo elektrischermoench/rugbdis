@@ -1,6 +1,9 @@
 # rugbdis
 A rust based game boy disassembler
 
+## Experimental
+
+This is for learning rust and doing some cool stuff with disassembling and Game Boy (TM).
 
 ## Example
 
@@ -48,7 +51,7 @@ Entrypoint: 0xFFFF
 107:     66             LD H HL
 ```
 
-Compare with r2 is working
+Compared with r2 this disassembler seems to work.
 
 ```bash
 % r2 helloworld.gb
