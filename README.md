@@ -76,3 +76,19 @@ Compared with r2 this disassembler seems to work.
 [0x00000100]> 
 ```
 
+If used with dumbed ROMS the entrypoint is parsed correctly (only use ROMS you own physically):
+
+```
+...
+Destination code (Japanese Version): false
+Super GameBoy: false
+Color GameBoy: false
+RAM size: None
+ROM size: 128kB
+Global checksum: 8DC4
+Header checksum: 4C
+Entrypoint: 0x164
+100:     0              NOP
+101:     c3 64 1        JP 0x164
+...
+```
