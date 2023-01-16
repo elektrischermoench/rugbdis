@@ -6,7 +6,7 @@ A rust based game boy disassembler
 
 Building an Hello World with https://github.com/gbdk-2020/gbdk-2020
 
-'''C
+```C
 #include <stdio.h>
  
 void main()
@@ -19,17 +19,17 @@ while (counter <=16)
     counter++;
     }
 }
-'''
+```
 
 Build with:
 
-'''bash
+```bash
 ./gbdk/bin/lcc -o helloworld.gb helloworld.c
-'''
+```
 
 Unfortunately the compiler seem to break the entry point. This is working with other roms.
 
-'''bash
+```bash
 Title: ^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@
 Cartridge type: ROM ONLY
 Destination code (Japanese Version): true
@@ -46,11 +46,11 @@ Entrypoint: 0xFFFF
 104:     ce ed          ADC A 0xed
 106:     66             LD H HL
 107:     66             LD H HL
-'''
+```
 
 Compare with r2 is working
 
-'''bash
+```bash
 % r2 helloworld.gb
  -- Don't wait for Travis
 [0x00000100]> pd 10
@@ -67,5 +67,5 @@ Compare with r2 is working
         |   0x0000010c      03             inc bc
         |   0x0000010d      73             ld [hl], e
 [0x00000100]> 
-'''
-'''
+```
+
